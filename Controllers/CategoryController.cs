@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Rock;
 using Rock.Models;
 using Rock.Data;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LeaningShop.Controllers
 {
+    [Authorize(Roles = WConst.AdminRole)]
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext _context;

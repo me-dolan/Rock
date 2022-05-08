@@ -10,9 +10,12 @@ using System;
 using System.IO;
 using Rock;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LeaningShop.Controllers
 {
+
+    [Authorize(Roles = WConst.AdminRole)]
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;

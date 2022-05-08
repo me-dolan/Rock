@@ -27,6 +27,8 @@
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        @if (User.IsInRole(WConst.AdminRole))
+                        {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Content Management
@@ -39,6 +41,7 @@
                                 <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Регистрация админа</a>
                             </div>
                         </li>
+                        }
                         <li>
                             @if(HttpContextAccessor.HttpContext.Session.Get<List<ShoppingCart>>(WConst.SessionCart) != null)
                             {
