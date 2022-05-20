@@ -37,4 +37,10 @@
     <None Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rocky_Models\Rock_Models.csproj" />
+    <ProjectReference Include="..\Rock_DataAccess\Rock_DataAccess.csproj" />
+    <ProjectReference Include="..\Rock_Utility\Rock_Utility.csproj" />
+  </ItemGroup>
+
 </Project>

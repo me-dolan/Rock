@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Rock;
-using Rock.Data;
-using Rock.Models;
+using Rock_DataAccess;
+using Rock_Models;
+using Rock_Utility;
 
 namespace LeaningShop.Controllers
 {

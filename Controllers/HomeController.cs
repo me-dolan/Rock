@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Rock.Models;
-using Rock.Models.ViewModels;
+using Rock_Models;
+using Rock_Models.ViewModels;
 using Microsoft.Extensions.Logging;
-using Rock.Data;
+using Rock_DataAccess;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
-using Rock.Utility;
+using Rock_Utility;
 using Rock;
 
 namespace LeaningShop.Controllers

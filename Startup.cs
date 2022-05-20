@@ -12,8 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
-using Rock.Data;
-using Rock.Utility;
+using Rock_DataAccess;
+using Rock_Utility;
 
 namespace Rock
 {
