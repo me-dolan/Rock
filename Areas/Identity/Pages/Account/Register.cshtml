@@ -1,8 +1,7 @@
 ﻿@page
 @model RegisterModel
-@using Rock_Utility
 
-@if(User.IsInRole(WConst.AdminRole))
+@if(User.IsInRole(Rock.WConst.AdminRole))
 {
     <h1>Регистрация Админ аккаунта</h1>
 }
@@ -42,7 +41,7 @@ else
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            @if(User.IsInRole(WConst.AdminRole))
+            @if(User.IsInRole(Rock.WConst.AdminRole))
             {
                 <button type="submit" class="btn btn-primary">Регистрация админа</button>
             }

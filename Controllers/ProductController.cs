@@ -1,6 +1,6 @@
-﻿using Rock_Models;
-using Rock_DataAccess;
-using Rock_Models.ViewModels;
+﻿using Rock.Models;
+using Rock.Data;
+using Rock.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Hosting;
@@ -11,7 +11,6 @@ using System.IO;
 using Rock;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
-using Rock_Utility;
 
 namespace LeaningShop.Controllers
 {

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Rock_DataAccess;
+using Rock.Data;
 
 [assembly: HostingStartup(typeof(Rock.Areas.Identity.IdentityHostingStartup))]
 namespace Rock.Areas.Identity

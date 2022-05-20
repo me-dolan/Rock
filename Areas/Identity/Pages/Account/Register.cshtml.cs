@@ -13,8 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using Rock_Models;
-using Rock_Utility;
+using Rock.Models;
 
 namespace Rock.Areas.Identity.Pages.Account
 {
